@@ -1,28 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mohammed Shameel - Terminal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Shameel </title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="terminal">
-        <div id="title-bar">
-            <div class="button red"></div>
-            <div class="button yellow"></div>
-            <div class="button green"></div>
+    <!-- Mobile Menu -->
+    <button class="mobile-menu-btn" id="menuBtn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <nav class="sidebar" id="sidebar">
+        <ul class="sidebar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Desktop Navigation -->
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div id="content">
-            <div id="output">
-                <div class="output">Mohammed Shameel</div>
-                <div class="output">Welcome to my interactive terminal portfolio</div>
-                <div class="output">Type 'help' to see available commands</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Hi, I'm <br> Mohammed Shameel M</h2>
+                <p>Building digital experiences that matter. Specializing in modern web applications with focus on performance and user experience.</p>
+                <a href="#projects" class="btn">View Projects</a>
             </div>
-            <div class="input-line">
-                <span class="prompt">mohammed@shameel $</span>
-                <input type="text" id="input" autofocus>
+            <div>
+                <img src="kk" alt="hoy">
             </div>
         </div>
-    </div>
+        <!-- Animated Background Elements -->
+        <div class="hero-deco">
+            <div class="blob" style="top: 20%; left: 10%; background: rgba(100, 108, 255, 0.1);"></div>
+            <div class="blob" style="top: 60%; right: 15%; background: rgba(255, 107, 107, 0.1);"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <h3>Project Title</h3>
+                    <p>Project description with key details and technologies used.</p>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+                <!-- Add more project cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <!-- Add more skills -->
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
